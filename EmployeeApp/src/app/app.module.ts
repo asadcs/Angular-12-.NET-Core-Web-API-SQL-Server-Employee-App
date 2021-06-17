@@ -14,6 +14,8 @@ import { EditDeptComponent } from './department/edit-dept/edit-dept.component';
 import { AddDeptComponent } from './department/add-dept/add-dept.component';
 import { EmployeeService } from './Services/employee.service';
 import { DepartmentService } from './Services/department.service';
+import { MatTableModule } from '@angular/material/table';
+
 
 @NgModule({
   declarations: [
@@ -31,7 +33,10 @@ import { DepartmentService } from './Services/department.service';
     BrowserModule,
     AppRoutingModule,
     MatSliderModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatTableModule
+
+    
   ],
   providers: [EmployeeService,DepartmentService],
   bootstrap: [AppComponent]
