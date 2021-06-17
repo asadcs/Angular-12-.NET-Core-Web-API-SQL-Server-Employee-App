@@ -12,6 +12,8 @@ import { DepartmentComponent } from './department/department.component';
 import { ShowDeptComponent } from './department/show-dept/show-dept.component';
 import { EditDeptComponent } from './department/edit-dept/edit-dept.component';
 import { AddDeptComponent } from './department/add-dept/add-dept.component';
+import { EmployeeService } from './Services/employee.service';
+import { DepartmentService } from './Services/department.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,7 @@ import { AddDeptComponent } from './department/add-dept/add-dept.component';
     MatSliderModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [EmployeeService,DepartmentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
